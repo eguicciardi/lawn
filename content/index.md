@@ -7,5 +7,5 @@ tags:
   - garden
 ---
 
-This is a my digital garden. I don't kwow what I'm going to do with it yet. I'm sure it feels like Geocities.
+This is my digital garden. I don't kwow what I'm going to do with it yet. I'm sure it feels like Geocities.
 Maybe I'll enjoy it.
