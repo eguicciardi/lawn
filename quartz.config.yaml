@@ -146,6 +146,9 @@ plugins:
     enabled: true
   - source: github:quartz-community/explorer
     enabled: true
+    options:
+      title: Index
+      folderDefaultState: collapsed
     layout:
       position: left
       priority: 50
