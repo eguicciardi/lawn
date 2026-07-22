@@ -16,30 +16,32 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Schibsted Grotesk
+      header: Elms Sans
       body: Source Sans Pro
       code: IBM Plex Mono
     colors:
+      # Palette: dry sage #c8cc92 / petal rouge #ff7b9c / glaucous #607196
+      #          black #08090a / vintage berry #9a275a
       lightMode:
-        light: "#faf8f8"
-        lightgray: "#e5e5e5"
-        gray: "#b8b8b8"
-        darkgray: "#4e4e4e"
-        dark: "#2b2b2b"
-        secondary: "#284b63"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#fff23688"
+        light: "#faf9f2" # page background: paper white with a sage tint
+        lightgray: "#e4e6d5" # borders: desaturated dry sage
+        gray: "#b0b585" # graph links, heavier borders: dry sage, darkened
+        darkgray: "#33384a" # body text: near-black shifted toward glaucous (11:1 on bg)
+        dark: "#08090a" # headings and icons: palette black
+        secondary: "#9a275a" # links, current graph node: vintage berry (7.1:1 on bg)
+        tertiary: "#607196" # hover states, visited graph nodes: glaucous
+        highlight: rgba(96, 113, 150, 0.15) # internal link / code block background
+        textHighlight: "#ff7b9c55" # ==marked text==: petal rouge, low alpha
       darkMode:
-        light: "#161618"
-        lightgray: "#393639"
-        gray: "#646464"
-        darkgray: "#d4d4d4"
-        dark: "#ebebec"
-        secondary: "#7b97aa"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#b3aa0288"
+        light: "#161719" # page background: palette black, lifted to avoid pure OLED black
+        lightgray: "#24262c" # borders
+        gray: "#4e576e" # graph links, heavier borders: muted glaucous
+        darkgray: "#d6d8ca" # body text: off-white with a sage tint
+        dark: "#f3f4ec" # headings and icons
+        secondary: "#ff7b9c" # links: petal rouge (berry is too dark here, 8:1 on bg)
+        tertiary: "#8b99bd" # hover states, visited graph nodes: lightened glaucous
+        highlight: rgba(96, 113, 150, 0.22) # internal link / code block background
+        textHighlight: "#9a275a99" # ==marked text==: vintage berry, semi-transparent
 plugins:
   - source: github:quartz-community/created-modified-date
     enabled: true
