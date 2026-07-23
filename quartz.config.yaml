@@ -146,14 +146,17 @@ plugins:
     enabled: true
   - source: github:quartz-community/explorer
     enabled: true
+    options:
+      title: Index
+      folderDefaultState: collapsed
     layout:
       position: left
       priority: 50
   - source: github:quartz-community/graph
     enabled: true
     layout:
-      position: right
-      priority: 10
+      position: left
+      priority: 60
   - source: github:quartz-community/search
     enabled: true
     layout:
@@ -217,8 +220,8 @@ plugins:
     enabled: true
     options:
       links:
-        GitHub: https://github.com/jackyzha0/quartz
-        Discord Community: https://discord.gg/cRFFHYye7t
+        Me: https://guicciardi.net
+        GitHub: https://github.com/eguicciardi/lawn
   - source: github:quartz-community/recent-notes
     enabled: false
   - source: github:quartz-community/spacer
@@ -247,7 +250,7 @@ plugins:
       language: yaml
     order: 5
     layout:
-      position: beforeBody
+      position: afterBody
       priority: 15
       display: all
 layout:
