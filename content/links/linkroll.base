@@ -1,0 +1,29 @@
+# linkroll.base — chronological roll of every note in the links/ folder.
+# Global filter applies to all views below.
+filters:
+  and:
+    - file.inFolder("links")
+
+views:
+  # Chronological linkroll: newest first.
+  - type: cards
+    name: Linkroll
+    order:
+      - added
+      - description
+      - tags
+      - url
+    sort:
+      - column: added
+        direction: DESC
+
+  # Same data, grouped by tag for browsing by topic.
+  - type: table
+    name: By tag
+    groupBy:
+      property: tags
+      direction: ASC
+    order:
+      - title
+      - added
+      - url
